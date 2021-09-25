@@ -18,12 +18,87 @@
                 <li><a href="a5.html">Assignment 5</a></li>
             </ul>
         </nav>
-        <div class="content-container">    
-            <h1>May I get your name?</h1>
-            <br>
-            <input type="text" id="nameInput">
-            <br>
-            <input type="button" value="CLICK THIS" id="btn">
+        <div class="content">
+            <div class="JScontent-container" id="js-content">
+                <h1>Working with form elements using Javascript's addEventListener</h1>
+                <div class="radio-container">
+                    <input type="radio" id="radio-1" name="color-radio" value="red">
+                    <label for="red">Red</label>
+                    <input type="radio" id="radio-2" name="color-radio" value="yellow">
+                    <label for="yellow">Yellow</label>
+                    <input type="radio" id="radio-3" name="color-radio" value="blue">
+                    <label for="blue">Blue</label>
+                </div>
+                <div class="select-container">
+                    <select name="color-select" id="color-select">
+                        <option value="orange">Orange</option>
+                        <option value="green">Green</option>
+                        <option value="teal">Teal</option>
+                    </select>
+                </div>
+                <div class="text-container">
+                    <label for="text-input">Input a color name or a hexidecimal value</label>
+                    <input type="text" name="text-input" id="text-input">
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="color-checkbox" id="purple">
+                    <label for="color-checkbox">Purple</label>
+                    <input type="checkbox" name="color-checkbox" id="purple">
+                    <label for="color-checkbox">White</label>
+                    <input type="checkbox" name="color-checkbox" id="purple">
+                    <label for="color-checkbox">Black</label>
+                </div>
+                <div class="button-container">
+                    <input type="button" value="plum">
+                    <input type="button" value="olive">
+                    <input type="button" value="magenta">
+                </div>
+                <div class="p-container">
+                    <p>Grey Background</p>
+                    <p>Cyan Background</p>
+                    <p>Lime Background</p>
+                </div>
+            </div>
+            <div class="jQcontent-container" id="jQuery-content">
+                <h1>Working with form elements using jQuery</h1>
+                <div class="jQradio-container">
+                    <input type="radio" id="jQradio-1" name="jQcolor-radio" value="aquamarine">
+                    <label for="aquamarine">Aquamarine</label>
+                    <input type="radio" id="jQradio-2" name="jQcolor-radio" value="brown">
+                    <label for="brown">Brown</label>
+                    <input type="radio" id="jQradio-3" name="jQcolor-radio" value="yellow-green">
+                    <label for="yellow-green">Yellow Green</label>
+                </div>
+                <div class="jQselect-container">
+                    <select name="jQcolor-select" id="jQcolor-select">
+                        <option value="peru">Peru</option>
+                        <option value="periwinkle">Periwinkle</option>
+                        <option value="yellow-orange">Yellow Orange</option>
+                    </select>
+                </div>
+                <div class="jQtext-container">
+                    <label for="jQtext-input">Input a color name or a hexidecimal value</label>
+                    <input type="text" name="jQtext-input" id="jQtext-input">
+                </div>
+                <div class="jQcheckbox-container">
+                    <input type="checkbox" name="jQcolor-checkbox" id="hot-pink">
+                    <label for="jQcolor-checkbox">Hot Pink</label>
+                    <input type="checkbox" name="jQcolor-checkbox" id="coral">
+                    <label for="jQcolor-checkbox">Coral</label>
+                    <input type="checkbox" name="jQcolor-checkbox" id="dark-cyan">
+                    <label for="jQcolor-checkbox">Dark Cyan</label>
+                </div>
+                <div class="jQbutton-container">
+                    <input type="button" value="Bisque">
+                    <input type="button" value="Crimson">
+                    <input type="button" value="Medium Purple">
+                </div>
+                <div class="jQp-container">
+                    <p>Pale Turquoise Background</p>
+                    <p>Sea Green Background</p>
+                    <p>Sandy Brown Background</p>
+                </div>
+            </div>        
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
