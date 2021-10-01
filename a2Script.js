@@ -1,13 +1,14 @@
-//Start JS Code
+//----------JS--------------
 //Radio Items
-const radioItems = document.getElementsByName("color-radio");
+const radios = document.getElementsByName("color-radio");
 
-for(let i = 0; i < radioItems.length; i++){
-	document.getElementById(radioItems[i].id).addEventListener("click", changeBackground);
-}//end radioItems for
+for(let i = 0; i < radios.length; i++){
+	document.getElementById(radios[i].id).addEventListener("click", changeBackground);
+}//end radios for
 
 //Text Input
 document.getElementById("text-input").addEventListener("change", changeBackground);
+
 
 //Buttons
 const buttons = document.getElementsByName("color-btn");
@@ -34,10 +35,11 @@ for(let i = 0; i < p.length; i++){
 }//end p for
 
 function changeBackground(){
-    const colorVal = this.id;
+    const colorVal = this.value || this.id;
     document.getElementById("bg-color").style.backgroundColor = colorVal;
 }//end changeBackground()
 
+//----------jQuery-------------
 jQuery(
     function(){
         //Radio items

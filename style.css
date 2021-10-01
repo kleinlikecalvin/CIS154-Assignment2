@@ -1,6 +1,9 @@
 :root {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+body {
+  transition: 1s;
+}
 .main-container {
   width: 1145px;
   margin: 4em auto;
