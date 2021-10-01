@@ -37,3 +37,22 @@ function changeBackground(){
     const colorVal = this.value || this.id;
     document.getElementById("bg-color").style.backgroundColor = colorVal;
 }//end changeBackground()
+
+jQuery(
+    function(){
+        //Radio items
+        $(".jQradio-container input").click(
+			function(){
+				$("body").css("background-color", this.value);
+			}//end nested anon function
+        );//end radio button click event
+
+        //Text Input
+        $("#jQtext-input").change(
+			function(){
+				$("body").css("background-color", this.value);
+			}//end nested anon function
+        );//end text input change event
+
+    }//end master function
+);//end main jQuery
