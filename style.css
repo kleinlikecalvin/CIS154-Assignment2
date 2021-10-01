@@ -2,12 +2,15 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .main-container {
-  min-width: 1200px;
+  min-width: 1240px;
+  max-width: 1400px;
   margin: 4em auto;
   border: 2px solid coral;
+  display: flex;
 }
 nav {
   position: relative;
+  width: 20%;
 }
 ul {
   list-style: none;
@@ -20,7 +23,7 @@ li {
   font-weight: bold;
   font-size: 24px;
   color: #ffb344;
-  margin-left: 3px;
+  padding-left: 13px;
 }
 li a {
   text-decoration: none;
@@ -32,9 +35,10 @@ li a {
   border-radius: 10px;
 }
 .content {
-  display: inline-block;
-  /* flex-direction: column; */
-  justify-content: right;
+  display: flex;
+  flex-direction: column;
+
+  border: 2px solid black;
 }
 .jsContent-container {
   padding: 1em;
@@ -42,6 +46,17 @@ li a {
   max-width: 75%;
   border: 2px solid coral;
   text-align: center;
+}
+.radio-container,
+.text-container,
+.button-container {
+  float: left;
+  display: block;
+}
+.select-container,
+.checkbox-container,
+.p-container {
+  float: right;
 }
 .jQcontent-container {
   padding: 1em;
