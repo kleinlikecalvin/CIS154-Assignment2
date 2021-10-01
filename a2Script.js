@@ -34,7 +34,7 @@ for(let i = 0; i < p.length; i++){
 }//end p for
 
 function changeBackground(){
-    const colorVal = this.value || this.id;
+    const colorVal = this.id;
     document.getElementById("bg-color").style.backgroundColor = colorVal;
 }//end changeBackground()
 
