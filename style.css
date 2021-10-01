@@ -2,8 +2,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .main-container {
-  min-width: 1240px;
-  max-width: 1400px;
+  width: 1145px;
   margin: 4em auto;
   border: 2px solid coral;
   display: flex;
@@ -37,35 +36,29 @@ li a {
 .content {
   display: flex;
   flex-direction: column;
-
   border: 2px solid black;
-}
-.jsContent-container {
-  padding: 1em;
   color: #e05d5d;
-  max-width: 75%;
-  border: 2px solid coral;
   text-align: center;
 }
-.radio-container,
-.text-container,
-.button-container {
-  float: left;
-  display: block;
-}
-.select-container,
-.checkbox-container,
-.p-container {
-  float: right;
-}
+.js-content-container,
 .jQcontent-container {
   padding: 1em;
-  color: #e05d5d;
-  max-width: 75%;
-  background-color: black;
-  text-align: center;
   border: 2px solid coral;
 }
-.content-container input {
+.columns-row {
+  display: flex;
+  justify-content: space-around;
+}
+.columns-row .left-column div,
+.columns-row .right-column div {
+  margin: 30px;
+}
+.columns-row div > * {
+  margin: 5px;
+}
+select {
   width: 50%;
+}
+.jQcontent-container {
+  background-color: black;
 }
