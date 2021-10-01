@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Nikki Klein - Assignment 1 - CIS154</title>
+    <title>Nikki Klein - Assignment 2 - CIS154</title>
 </head>
 <body id="bg-color"> 
     <div class="main-container">
@@ -37,31 +37,32 @@
                             <input type="text" name="text-input" id="text-input">
                         </div>    
                         <div class="button-container">
-                            <input type="button" value="Plum">
-                            <input type="button" value="Olive">
-                            <input type="button" value="Magenta">
+                            <input type="button" value="Plum" name="color-btn" id="btn-1">
+                            <input type="button" value="Olive" name="color-btn" id="btn-2">
+                            <input type="button" value="Magenta" name="color-btn" id="btn-3">
                         </div>
                     </div>
                     <div class="right-column">
                         <div class="select-container">
-                            <select name="color-select" id="color-select">
+                            <select name="color-drop" id="color-drop">
+                                <option value="choose">Choose a color</option>
                                 <option value="orange">Orange</option>
                                 <option value="green">Green</option>
                                 <option value="teal">Teal</option>
                             </select>
                         </div>
                         <div class="checkbox-container">
-                            <input type="checkbox" name="color-checkbox" id="purple">
+                            <input type="checkbox" name="color-checkbox" id="purple" value="">
                             <label for="color-checkbox">Purple</label>
-                            <input type="checkbox" name="color-checkbox" id="purple">
+                            <input type="checkbox" name="color-checkbox" id="white" value="">
                             <label for="color-checkbox">White</label>
-                            <input type="checkbox" name="color-checkbox" id="purple">
+                            <input type="checkbox" name="color-checkbox" id="black" value="">
                             <label for="color-checkbox">Black</label>
                         </div>
                         <div class="p-container">
-                            <p>Grey Background</p>
-                            <p>Cyan Background</p>
-                            <p>Lime Background</p>
+                            <p name="p" id="grey">Grey Background</p>
+                            <p name="p" id="cyan">Cyan Background</p>
+                            <p name="p" id="lime">Lime Background</p>
                         </div>
                     </div>
                 </div>         
@@ -84,14 +85,15 @@
                             <input type="text" name="jQtext-input" id="jQtext-input">
                         </div>                
                         <div class="jQbutton-container">
-                            <input type="button" value="Bisque">
-                            <input type="button" value="Crimson">
-                            <input type="button" value="Medium Purple">
+                            <input type="button" value="Bisque" name="jQcolor-btn" id="jQbtn-1">
+                            <input type="button" value="Crimson" name="jQcolor-btn" id="jQbtn-1">
+                            <input type="button" value="Medium Purple" name="jQcolor-btn" id="jQbtn-1">
                         </div>
                     </div>
                     <div class="right-column">
                         <div class="jQselect-container">
-                            <select name="jQcolor-select" id="jQcolor-select">
+                            <select name="jQcolor-drop" id="jQcolor-drop">
+                                <option value="choose">Choose a color</option>
                                 <option value="peru">Peru</option>
                                 <option value="periwinkle">Periwinkle</option>
                                 <option value="yellow-orange">Yellow Orange</option>

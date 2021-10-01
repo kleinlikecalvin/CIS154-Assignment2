@@ -59,6 +59,9 @@ li a {
 select {
   width: 50%;
 }
+p {
+  cursor: pointer;
+}
 .jQcontent-container {
   background-color: black;
 }
