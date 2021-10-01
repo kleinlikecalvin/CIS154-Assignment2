@@ -54,5 +54,32 @@ jQuery(
 			}//end nested anon function
         );//end text input change event
 
+        //Buttons
+        $(".jQbutton-container input").click(
+			function(){
+				$("body").css("background-color", this.id);
+			}//end nested anon function
+        );//end button click event
+
+        //Dropdown Select
+        $("#jQcolor-drop").change(
+			function(){
+				$("body").css("background-color", this.value);
+			}//end nested anon function
+        );//end select change event
+
+        //Checkboxes
+        $(".jQcheckbox-container input").click(
+            function(){
+                $("body").css("background-color", this.id);
+            }//end nested anon function
+        );//end checkbox click event
+
+        //Paragraph tags
+        $(".jQp-container p").click(
+            function(){
+                $("body").css("background-color", this.id);
+            }//end nested anon function
+        );//end checkbox click event
     }//end master function
 );//end main jQuery
