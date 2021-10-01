@@ -1,8 +1,9 @@
+:root {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .main-container {
-  max-width: 1400px;
   min-width: 1200px;
   margin: 4em auto;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 2px solid coral;
 }
 nav {
@@ -35,7 +36,7 @@ li a {
   /* flex-direction: column; */
   justify-content: right;
 }
-.JScontent-container {
+.jsContent-container {
   padding: 1em;
   color: #e05d5d;
   max-width: 75%;
