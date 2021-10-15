@@ -68,3 +68,34 @@ p {
 .jQcontent-container {
   background-color: black;
 }
+/*-------a3.html---------*/
+.story-container {
+  background-color: black;
+  width: 80%;
+  color: #ffb344;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 3em;
+}
+.story-container hr {
+  border: 2px solid #e05d5d;
+  width: 100%;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+#genBtn {
+  border: 2px solid #00a19d;
+  border-radius: 5px;
+  background-color: #fff8e5;
+  color: #00a19d;
+  padding: 5px;
+  box-shadow: 3px 3px 8px #e05d5d;
+}
+#genBtn:hover {
+  border: 2px solid #fff8e5;
+  background-color: #00a19d;
+  color: #fff8e5;
+}
