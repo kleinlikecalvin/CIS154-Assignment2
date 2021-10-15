@@ -85,6 +85,7 @@ p {
 .col {
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 #genBtn {
   border: 2px solid #00a19d;
