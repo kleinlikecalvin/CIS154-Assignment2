@@ -76,16 +76,20 @@ p {
   text-align: center;
   display: flex;
   justify-content: space-around;
-  padding: 3em;
+  padding: 2em;
 }
 .story-container hr {
-  border: 2px solid #e05d5d;
+  border: 2px solid #00a19d;
   width: 100%;
 }
 .col {
   display: flex;
   flex-direction: column;
-  width: 50%;
+}
+.story {
+  background-color: #e05d5d;
+  padding: 1em;
+  border-radius: 6px;
 }
 #genBtn {
   border: 2px solid #00a19d;
@@ -94,9 +98,12 @@ p {
   color: #00a19d;
   padding: 5px;
   box-shadow: 3px 3px 8px #e05d5d;
+  transition: 1s;
 }
 #genBtn:hover {
   border: 2px solid #fff8e5;
   background-color: #00a19d;
   color: #fff8e5;
+  transition: 1s;
+  cursor: pointer;
 }
