@@ -89,6 +89,7 @@ p {
 .story {
   background-color: #e05d5d;
   padding: 1em;
+  margin: 1em;
   border-radius: 6px;
 }
 #genBtn {

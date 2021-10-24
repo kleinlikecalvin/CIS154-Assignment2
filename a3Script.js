@@ -1,27 +1,26 @@
 $(loadXml);
 function loadXml(){
-    $.get("https://cors-anywhere.herokuapp.com/https://rss.art19.com/apology-line").done(function(feed){
+    $.get("https://cors-anywhere.herokuapp.com/https://www.latimes.com/local/rss2.0.xml").done(function(feed){
         const story = $(feed).find("item");
         const randomNum = Math.floor(Math.random() * 10);
-        console.log(randomNum)
         $("#genBtn").click(function(){
-
-                // $("#image").html(story.find("itunes:image")[randomNum].attr("href"));//image
-                // let linkSpot = $("#webLink").attr("href") 
-                let link = story.find("guid")[randomNum];//href
-                console.log(link);
-                // linkSpot.text(link);
-            let title = story.find("title")[randomNum];
-            $("#title").html(title);//title
-                // $("#description").html(story.find("description")[randomNum].text);//description
-            
+                let image = story.find("media\\:content, content, url")[randomNum];//image 
+                 
+                // $("#image").html(image);     
+                console.log(image);      
+                let link = story.find("link")[randomNum].textContent;//href
+                $("#webLink").attr("href", link);
+                let title = story.find("title")[randomNum];
+                $("#title").html(title);//title
+                let description = story.find("description")[randomNum].textContent;//description
+                $("#description").html(description + "<br><br> Click the image for more details!");
         });//end click() and nested anon functions
     }).fail(function(){
-        console.log("Error message: ", status);
+        console.log("Error message: Something isn't right...");
     });//end .get().done().fail()
 }
 
-
+                        // $("#genBtn").off("click");
 
 /* 
 WHERE I LEFT OFF 10/15/2021
