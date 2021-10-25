@@ -91,6 +91,13 @@ p {
   padding: 1em;
   margin: 1em;
   border-radius: 6px;
+  width: 60%;
+}
+#moreDeets {
+  color: #fff8e5;
+}
+#image {
+  margin: 5px;
 }
 #genBtn {
   border: 2px solid #00a19d;
