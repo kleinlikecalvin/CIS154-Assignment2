@@ -3,7 +3,7 @@ function loadXml(){
     $.get("https://cors-anywhere.herokuapp.com/https://podcastfeeds.nbcnews.com/HL4TzgYC").done(function(feed){
         $("#genBtn").click(function(){
             const randomNum = Math.floor(Math.random() * 500);
-            const item = $(feed).find("item")[8];
+            const item = $(feed).find("item")[randomNum];
 
             let title = $(item).find("title");
             $("#title").html(title);//title
@@ -26,11 +26,3 @@ function loadXml(){
         console.log("Error message: Something isn't right...");
     });//end .get().done().fail()
 }
-
-                        // $("#genBtn").off("click");
-
-/* 
--description doesn't work
--link doesn't work
--image doesn't work
-  */

@@ -93,6 +93,9 @@ p {
   border-radius: 6px;
   width: 60%;
 }
+#title {
+  color: #00a19d;
+}
 #moreDeets {
   color: #fff8e5;
   font-weight: 700;
