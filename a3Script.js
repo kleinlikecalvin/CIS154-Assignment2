@@ -1,12 +1,13 @@
 $(loadXml);
 function loadXml(){
     $.get("https://cors-anywhere.herokuapp.com/https://podcastfeeds.nbcnews.com/HL4TzgYC").done(function(feed){
-        const randomNum = Math.floor(Math.random() * 500);
-        const story = $(feed).find("item")[0];
-        console.log(story);
         $("#genBtn").click(function(){
-                let image = story.find("media\\:content, content, url")[randomNum];//image 
-                let imageUrl = 
+            const randomNum = Math.floor(Math.random() * 500);
+            const story = $(feed).find("item")[0];
+            console.log(story);
+                let image = $(story).find("itunes:image");//image 
+                console.log(image);
+                // let imageUrl = 
                  
                 // $("#image").html(image);     
                 console.log(image);      
