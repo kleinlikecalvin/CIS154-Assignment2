@@ -18,7 +18,7 @@ function loadXml(){
             let link = $(story).find("link");//href
             console.log(link);
             $("#webLink").attr("href", link);
-            
+
             // let image = $(story).find("image");//image 
             // console.log(image);
             // let imageUrl = $(image).attr("url");
@@ -35,9 +35,7 @@ function loadXml(){
                         // $("#genBtn").off("click");
 
 /* 
-WHERE I LEFT OFF 10/15/2021
--HAVE TO sign "login" to the cors-anywhere site first
--Need to figure out the page link url, how to get to the images, and inject new elements by using the html() rather than just injecting content into the already created elements
--Write if/else statement for images if they're undefined show default photo <--- if
--Maybe find a new RSS feed
+-description doesn't work
+-link doesn't work
+-image doesn't work
   */
