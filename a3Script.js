@@ -3,27 +3,26 @@ function loadXml(){
     $.get("https://cors-anywhere.herokuapp.com/https://podcastfeeds.nbcnews.com/HL4TzgYC").done(function(feed){
         $("#genBtn").click(function(){
             const randomNum = Math.floor(Math.random() * 500);
+            const item = $(feed).find("item")[8];
+            console.log(item);
 
-            const story = $(feed).find("item")[0];
-            console.log(story);
-
-            let title = $(story).find("title");
+            let title = $(item).find("title");
             console.log(title);
             $("#title").html(title);//title
 
-            let description = $(story).find("itunes\\:summary");//description
+            let description = $(item).find("itunes\\:summary").text();//description
             console.log(description);
-            $("#description").html(description + "<br><br> Click the image for more details!");
+            $("#description").html(description + "<p id='moreDeets'>Click the image for more details!</p>");
 
-            let link = $(story).find("link");//href
+            let link = $(item).find("link").text();//href
             console.log(link);
             $("#webLink").attr("href", link);
 
-            // let image = $(story).find("image");//image 
-            // console.log(image);
-            // let imageUrl = $(image).attr("url");
-            // console.log(imageUrl);
-            // $("#image").html(image);   
+            let image = $(item).find("itunes\\:image").text();//image 
+            console.log(image);
+            let imageUrl = $(image).attr("url");
+            console.log(imageUrl);
+            $("#image").html(image);   
 
 
         });//end click() and nested anon functions

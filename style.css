@@ -95,9 +95,11 @@ p {
 }
 #moreDeets {
   color: #fff8e5;
+  font-weight: 700;
 }
 #image {
   margin: 5px;
+  border-radius: 5px;
 }
 #genBtn {
   border: 2px solid #00a19d;
