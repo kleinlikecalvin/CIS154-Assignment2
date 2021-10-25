@@ -4,18 +4,14 @@ function loadXml(){
         $("#genBtn").click(function(){
             const randomNum = Math.floor(Math.random() * 500);
             const item = $(feed).find("item")[8];
-            console.log(item);
 
             let title = $(item).find("title");
-            console.log(title);
             $("#title").html(title);//title
 
             let description = $(item).find("itunes\\:summary").text();//description
-            console.log(description);
             $("#description").html(description + "<p id='moreDeets'>Click the image for more details!</p>");
 
             let link = $(item).find("link").text();//href
-            console.log(link);
             $("#webLink").attr("href", link);
 
             let image = $(item).find("itunes\\:image").text();//image 
