@@ -4,7 +4,7 @@ function loadXml(){
         let numOfItems = $(feed).find("item").length;//get number of items in feed
 
         $("#genBtn").click(function(){
-            const randomNum = Math.floor(Math.random() * 500);//generate a random number
+            const randomNum = Math.floor(Math.random() * 430);//generate a random number
             const item = $(feed).find("item")[randomNum];//get an item at that random index
 
             if(randomNum <= numOfItems){
@@ -19,7 +19,6 @@ function loadXml(){
 
                 let image = $(item).find("itunes\\:image, content");//image 
                 let imageUrl = $(image).attr("href");
-                console.log(imageUrl);
                 if(imageUrl == undefined){
                     let defaultImage = "https://mpama.com/wp-content/uploads/2017/04/default-image.jpg";
                     $("#image").attr("src", defaultImage);
