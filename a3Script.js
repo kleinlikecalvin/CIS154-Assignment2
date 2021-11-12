@@ -4,7 +4,7 @@ function loadXml(){
         let numOfItems = $(feed).find("item").length;//get number of items in feed
 
         $("#genBtn").click(function(){
-            const randomNum = Math.floor(Math.random() * 430);//generate a random number
+            const randomNum = Math.floor(Math.random() * numOfItems);//generate a random number
             const item = $(feed).find("item")[randomNum];//get an item at that random index
 
             if(randomNum <= numOfItems){
