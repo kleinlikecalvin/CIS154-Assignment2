@@ -1,5 +1,6 @@
 :root {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  --bRadius: 10px;
 }
 body {
   transition: 1s;
@@ -9,6 +10,7 @@ body {
   margin: 4em auto;
   border: 2px solid coral;
   display: flex;
+  border-radius: var(--bRadius);
 }
 nav {
   position: relative;
@@ -34,7 +36,7 @@ li a {
 }
 .navLinks {
   background-color: #fff8e5;
-  border-radius: 10px;
+  border-radius: var(--bRadius);
 }
 .content {
   display: flex;
@@ -90,7 +92,7 @@ p {
   background-color: #e05d5d;
   padding: 1em;
   margin: 1em;
-  border-radius: 6px;
+  border-radius: var(--bRadius);
   width: 60%;
 }
 #title {
@@ -102,11 +104,11 @@ p {
 }
 #image {
   margin: 5px;
-  border-radius: 5px;
+  border-radius: var(--bRadius);
 }
 #genBtn {
   border: 2px solid #00a19d;
-  border-radius: 5px;
+  border-radius: var(--bRadius);
   background-color: #fff8e5;
   color: #00a19d;
   padding: 5px;
@@ -119,4 +121,160 @@ p {
   color: #fff8e5;
   transition: 1s;
   cursor: pointer;
+}
+/*------- a4.html ---------*/
+.task-board-container {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+}
+#taskContainer {
+  border: 1px solid #00a19d;
+  padding: 3em;
+  border-radius: var(--bRadius);
+}
+#taskContainer h1 {
+  color: #00a19d;
+  display: flex;
+  justify-content: center;
+}
+#taskCounter {
+  background-color: #00a19d;
+  color: #fff8e5;
+  margin: 5px;
+  margin-top: 0;
+  padding: 8px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 100%;
+  align-self: baseline;
+}
+#taskContainer input {
+  display: block;
+  margin: 1em auto;
+  padding: 5px;
+  border: 2px solid #ffb344;
+  border-radius: var(--bRadius);
+  width: 90%;
+}
+#a4btn {
+  background-color: #e05d5d;
+  color: #fff8e5;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1em;
+  border: 2px solid #fff8e5;
+  border-radius: var(--bRadius);
+  transition: 1s;
+}
+#a4btn:hover {
+  cursor: pointer;
+  background-color: #fff8e5;
+  color: #e05d5d;
+  border: 2px solid #e05d5d;
+  margin: 0;
+  transition: 1s;
+}
+#taskContainer li {
+  background-color: #ffb344;
+  margin: 1em auto;
+  padding: 1em;
+  border-radius: var(--bRadius);
+  text-transform: uppercase;
+}
+.task {
+  color: #fff8e5;
+  font-weight: bold;
+}
+.date {
+  color: #e05d5d;
+  font-size: larger;
+  font-weight: bold;
+}
+.daysUntil {
+  font-size: small;
+  color: #00a19d;
+}
+.daysUntil span {
+  color: #e05d5d;
+  font-size: larger;
+  font-weight: bold;
+}
+/*Calendar*/
+.ui-datepicker {
+  width: 216px;
+  height: auto;
+  margin: 5px auto 0;
+  font: 9pt Arial, sans-serif;
+  background-color: #e05d5d;
+}
+/*Next, Prev, and number of each day*/
+.ui-datepicker a {
+  text-decoration: none;
+  color: #fff8e5;
+}
+
+.ui-datepicker table {
+  width: 100%;
+  border-collapse: collapse;
+}
+/*Month and year bar*/
+.ui-datepicker-header {
+  color: #ffb344;
+  font-weight: bold;
+  line-height: 30px;
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: #00a19d;
+  background-color: #00a19d;
+}
+
+.ui-datepicker-title {
+  text-align: center;
+}
+
+.ui-datepicker-prev,
+.ui-datepicker-next {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  color: #ffb344;
+}
+
+.ui-datepicker-prev {
+  float: left;
+  margin-left: 5px;
+}
+.ui-datepicker-next {
+  float: right;
+  margin-right: 5px;
+}
+/*days of the week bar*/
+.ui-datepicker thead {
+  background-color: #ffb344;
+  border-bottom: 1px solid #ffb344;
+  border-right: 1px solid #00a19d;
+  border-left: 1px solid #00a19d;
+}
+/*days of the week*/
+.ui-datepicker th {
+  text-transform: uppercase;
+  font-size: 6pt;
+  padding: 5px 0;
+  color: #00a19d;
+}
+
+.ui-datepicker tbody td {
+  padding: 7px;
+  border: 1px solid #00a19d;
+}
+
+.ui-datepicker tbody tr {
+  border-bottom: 1px solid #ffb344;
+}
+.ui-datepicker tbody tr:last-child {
+  border-bottom: 0px;
 }

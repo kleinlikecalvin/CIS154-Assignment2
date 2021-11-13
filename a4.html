@@ -13,25 +13,29 @@
     <div class="main-container">
         <nav>
             <ul id="navLinks">
-                <li href="a1.html">Assignment 1</li>
+                <li><a href="a1.html">Assignment 1</a></li>
                 <li><a href="a2.html">Assignment 2</a></li>
                 <li><a href="a3.html">Assignment 3</a></li>
                 <li class="active">Assignment 4</li>
                 <li><a href="a5.html">Assignment 5</a></li>
             </ul>
         </nav>
-        <div class="content-container">
-            <ul>
-                <h1>TO DO LIST</h1>
-                <input type="text" id="taskInput" value="Task title">
-                <input type="text" id="dateInput" value="Task Due Date">
-                <button>Add Task</button>
+        <div class="task-board-container">
+            <ul id="taskContainer">
+                <h1>TO DO LIST <span id="taskCounter">0</span></h1>
+                <input type="text" id="taskInput" placeholder="Task title">
+                <input type="text" id="dateInput" placeholder="Task Due Date">
+                <button id="a4btn">Add Task</button>
             </ul>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- jQuery Date Picker Plugin-->
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <!-- Navigation Script-->
     <script src="navScript.js"></script>
+    <!--Assignment 4 Script-->
     <script src="a4Script.js"></script>
 </body>
 
