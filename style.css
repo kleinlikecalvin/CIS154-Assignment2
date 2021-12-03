@@ -278,3 +278,46 @@ p {
 .ui-datepicker tbody tr:last-child {
   border-bottom: 0px;
 }
+/*------- a5.html ---------*/
+form {
+  margin: 1em 0 1em 0;
+}
+form label,
+form p {
+  display: block;
+  margin: 5px 0 5px 0;
+  color: #00a19d;
+}
+form input {
+  padding: 5px;
+  border-radius: var(--bRadius);
+  border: 1px solid #e05d5d;
+}
+.radioLabels {
+  display: inline;
+  color: black;
+}
+form select {
+  padding: 5px;
+  border-radius: var(--bRadius);
+  border: 1px solid #e05d5d;
+}
+form button {
+  display: block;
+  margin: 1em 0 0 0;
+  padding: 1em;
+  background-color: #ffb344;
+  color: #fff8e5;
+  font-weight: bold;
+  border: 2px solid #e05d5d;
+  border-radius: var(--bRadius);
+  transition: 0.75s;
+}
+form button:hover {
+  margin: 1em 0 0 0;
+  cursor: pointer;
+  background-color: #00a19d;
+  color: #fff8e5;
+  border: 2px solid #ffb344;
+  transition: 0.75s;
+}
