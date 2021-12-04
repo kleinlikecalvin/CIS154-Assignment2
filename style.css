@@ -297,12 +297,7 @@ form input {
   display: inline;
   color: black;
 }
-form select {
-  padding: 5px;
-  border-radius: var(--bRadius);
-  border: 1px solid #e05d5d;
-}
-form button {
+#prizeBtn {
   display: block;
   margin: 1em 0 0 0;
   padding: 1em;
@@ -313,7 +308,7 @@ form button {
   border-radius: var(--bRadius);
   transition: 0.75s;
 }
-form button:hover {
+#prizeBtn:hover {
   margin: 1em 0 0 0;
   cursor: pointer;
   background-color: #00a19d;
