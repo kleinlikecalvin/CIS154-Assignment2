@@ -22,6 +22,7 @@ button.addEventListener("click", function () {
 
     //anyNum 👍🏼
     const anyNumInput = document.getElementById("anyNumber");
+    //checkForNonDigits used here
 
     if(anyNumInput.value == "" || anyNumInput.value.match(checkForNonDigits) != null) {
 
@@ -65,6 +66,7 @@ button.addEventListener("click", function () {
     //7-14 👍🏼
     const betweenNum = document.getElementById("sevenToFourteen");
     const betweenExp = betweenNum.value >= 7 && betweenNum.value <= 14;
+    //checkForNonDigits used here
 
     if(betweenNum.value == "" || !betweenExp || betweenNum.value.match(checkForNonDigits) != null) {
 
