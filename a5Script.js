@@ -9,8 +9,9 @@ const anyNumAlertSpanId = "anyNumAlertSpan";
 const verbInput = document.getElementById("ingVerb");
 const verbAlertSpanId = "ingVerbAlertSpan";
 
-const doors = document.querySelectorAll("input[type='radio']");
+const doors = document.getElementsByName('chooseDoor');
 const doorsAlertSpanId = "doorsAlertSpan";
+let chosenDoor;
 
 const betweenNumInput = document.getElementById("sevenToFourteen");
 const betweenAlertSpanId = "betweenNumAlertSpan";
@@ -117,6 +118,16 @@ button.addEventListener("click", function () {
         invalid = true;
 
     } else {
+              
+        for(let i = 0; i < doors.length; i++) {
+
+            if(doors[i].checked) {
+                
+                chosenDoor = doors[i].value;
+
+            }//end checked door if
+
+        }//end for loop
 
         invalid = false;
         
@@ -168,11 +179,9 @@ button.addEventListener("click", function () {
 
 function makeCookies() {
 
-    const cookieIngredients = firstNameInput.value + " " + anyNumInput.value + " "  + verbInput.value + " "  + doors.value + " "  + betweenNumInput.value + " "  + bNameInput.value;
+    const cookieIngredients = "name=" + firstNameInput.value + "; anyNum=" + anyNumInput.value + "; verb="  + verbInput.value + "; door="  + chosenDoor + "; betweenNum="  + betweenNumInput.value + "; bName="  + bNameInput.value;
 
-    console.log(cookieIngredients);
-
-    document.cookie = encodeURI(cookieIngredients) + "; SameSite=Strict; expires=Tuesday, 10 Jan 2023 10:00:00 GMT";
+    document.cookie =  encodeURI(cookieIngredients + "; sameSite=Strict; expires=Tuesday, 10 Jan 2023 10:00:00 GMT; path=/");
 
 	document.location = "cookieDisplay.html";
 

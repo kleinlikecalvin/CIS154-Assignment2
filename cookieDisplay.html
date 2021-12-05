@@ -6,18 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WINNER</title>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
 
-            const cookieSplitter = decodeURI(document.cookie);
-            const myCookiePieces = cookieSplitter.split(" ");
-            console.log(myCookiePieces);
+        function getCookies() {
+
+            const splitCookies = document.cookie.split(";");
+            console.log(splitCookies);
+        }
 
             // document.getElementById("div1").innerHTML = someName;
-
-        });//end DOMContentLoaded event listener
-
-
-
 
 
     </script>
