@@ -157,22 +157,14 @@ button.addEventListener("click", function () {
         
     }
 
-/*
-INSTRUCTIONS FROM ASSIGNMENT
---I need to watch the demo 11 video in order to finish this assignment
 
-
---Once the form checks out okay, you will need to call a function (at the bottom of the form check function as seen in the demo) that will run code the that creates the cookie information. When this cookie making function runs, the items entered/selected in the form will be saved into a cookie file and window.location will be used to go to another page that will read the values back from the cookie file and display them on that page. DO NOT USE window.open()!!!!!
-
-***Remember, you will ultimately have five different values that will need to be saved into the cookie file, read from the cookie file, and then displayed on a separate page
-To summarize, the five things that will be saved into the cookie file and displayed on the separate page are: The persons name (see #1 above), a number (see #2 above), another value that starts or ends with certain letters of your choice (see #3 above), an image (see #4 above), and text that relates to the image (see #4 above).
-
-*/
+    //Are there invalid responses?~~~~~~~~~~~~~~~
     if(invalid == false) {
         alert("Let's make some cookies");
         makeCookies();
     }
 }); //end button click event
+
 
 function makeCookies() {
 
