@@ -4,14 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>WINNER</title>
     <script>
 
-        function getCookies() {
+        document.addEventListener("DOMContentLoaded", function () {
 
-            const splitCookies = document.cookie.split(";");
+            const decodeCookie = decodeURI(document.cookie);
+            const splitCookies = decodeCookie.split(" ");
             console.log(splitCookies);
-        }
+
+            const firstName = splitCookies[0];
+            const anyNum = splitCookies[1];
+            const verb = splitCookies[2];
+            const door = splitCookies[3];
+            const bName = splitCookies[4];
+            let prizeSrc;
+            let prizeTitle;
+
+            if(door == 0) {
+
+                prizeSrc = "https://image.shutterstock.com/image-photo/dust-bunny-over-white-background-260nw-175666913.jpg"
+
+                prizeTitle = "ball of lint";
+
+            }
+
+            if (door == 1) {
+
+                prizeSrc = "https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/WALN4MAIT4I6VLRIPUMJQAJIME.jpg"
+
+                prizeTitle = "naked cat";
+
+            }
+
+            if (door == 2) {
+
+                prizeSrc = "http://cdn.shopify.com/s/files/1/2253/1085/products/BeNicerToPeopleHoodie_flat_grande.png?v=1614033579https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/WALN4MAIT4I6VLRIPUMJQAJIME.jpg"
+
+                prizeTitle = "hoodie";
+
+            }
+
+            if (door == 3) {
+
+                prizeSrc = "https://beverages2u.com/wp-content/uploads/2019/05/nestlebottle-2.png"
+
+                prizeTitle = "bottle of water";
+
+            }
+
+            document.getElementById("congratsName").innerHTML = "Congratulations " + firstName;
+
+            document.getElementById("prizeImg").setAttribute("src", prizeSrc);
+            document.getElementById("prizeImg").setAttribute("alt", prizeTitle);
+
+            document.getElementById("prizeDescription").innerHTML = "You won a " + anyNum + " year old " + verb + " " + prizeTitle + " named " + bName + "! 🥳";
+
+
+        });//end DOMContentLoaded event listener
 
             // document.getElementById("div1").innerHTML = someName;
 
@@ -19,9 +70,9 @@
     </script>
 </head>
 <body>
-    <div id="mainContainer">
+    <div id="prizeContainer">
         <h1>Winner Winner Chicken Dinner</h1>
-        <img src="" alt="">
+        <img src="" alt="" id="prizeImg">
         <div>
             <h2 id="congratsName"></h2>
             <p id="prizeDescription"></p>

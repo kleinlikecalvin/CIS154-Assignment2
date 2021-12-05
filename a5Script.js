@@ -13,9 +13,6 @@ const doors = document.getElementsByName('chooseDoor');
 const doorsAlertSpanId = "doorsAlertSpan";
 let chosenDoor;
 
-const betweenNumInput = document.getElementById("sevenToFourteen");
-const betweenAlertSpanId = "betweenNumAlertSpan";
-
 const bNameInput = document.getElementById("nameWithB");
 const bNameAlertSpanId = "bNameAlertSpan";
 
@@ -134,23 +131,6 @@ button.addEventListener("click", function () {
     }            
 
 
-    //7-14 👍🏼 ~~~~~~~~~~~~~~~
-    //checkForNonDigits used here
-    const betweenExp = betweenNumInput.value >= 7 && betweenNumInput.value <= 14;
-    
-    if(betweenNumInput.value == "" || !betweenExp || betweenNumInput.value.match(checkForNonDigits) != null) {
-
-        showAlertSpan(betweenAlertSpanId, " Please enter only one number from 7 - 14");
-
-        betweenNumInput.addEventListener("change", () => hideAlertSpan(betweenAlertSpanId));
-
-        invalid = true;
-
-    } else {
-
-        invalid = false;
-        
-    }    
  
     //B name 👍🏼 ~~~~~~~~~~~~~~~
     let str = bNameInput.value.toUpperCase();
@@ -171,17 +151,19 @@ button.addEventListener("click", function () {
 
     //Are there invalid responses?~~~~~~~~~~~~~~~
     if(invalid == false) {
-        alert("Let's make some cookies");
+
         makeCookies();
+
     }
+
 }); //end button click event
 
 
 function makeCookies() {
 
-    const cookieIngredients = "name=" + firstNameInput.value + "; anyNum=" + anyNumInput.value + "; verb="  + verbInput.value + "; door="  + chosenDoor + "; betweenNum="  + betweenNumInput.value + "; bName="  + bNameInput.value;
+    const cookieIngredients = firstNameInput.value + " " + anyNumInput.value + " " + verbInput.value + " " + chosenDoor + " " + bNameInput.value;
 
-    document.cookie =  encodeURI(cookieIngredients + "; sameSite=Strict; expires=Tuesday, 10 Jan 2023 10:00:00 GMT; path=/");
+    document.cookie = encodeURI(cookieIngredients) + "; SameSite=Strict;";
 
 	document.location = "cookieDisplay.html";
 

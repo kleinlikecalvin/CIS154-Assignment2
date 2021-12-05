@@ -313,7 +313,33 @@ form input {
   transition: 0.75s;
 }
 #prizeBtn:hover {
-  margin: 1em 0 0 0;
+  cursor: pointer;
+  background-color: #00a19d;
+  color: #fff8e5;
+  border: 2px solid #ffb344;
+  transition: 0.75s;
+}
+#prizeContainer {
+  color: #e05d5d;
+  display: block;
+  text-align: center;
+}
+#prizeDescription {
+  color: #00a19d;
+}
+#prizeContainer button {
+  display: block;
+  margin: auto;
+  margin-bottom: 1em;
+  padding: 1em;
+  background-color: #ffb344;
+  color: #fff8e5;
+  font-weight: bold;
+  border: 2px solid #e05d5d;
+  border-radius: var(--bRadius);
+  transition: 0.75s;
+}
+#prizeContainer button:hover {
   cursor: pointer;
   background-color: #00a19d;
   color: #fff8e5;
