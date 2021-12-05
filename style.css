@@ -288,6 +288,10 @@ form p {
   margin: 5px 0 5px 0;
   color: #00a19d;
 }
+form span {
+  display: none;
+  color: red;
+}
 form input {
   padding: 5px;
   border-radius: var(--bRadius);

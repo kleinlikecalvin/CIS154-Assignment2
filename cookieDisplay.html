@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WINNER</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const cookieSplitter = decodeURI(document.cookie);
+            const myCookiePieces = cookieSplitter.split(" ");
+            console.log(myCookiePieces);
+
+            // document.getElementById("div1").innerHTML = someName;
+
+        });//end DOMContentLoaded event listener
+
+
+
+
+
+    </script>
+</head>
+<body>
+    <div id="mainContainer">
+        <h1>Winner Winner Chicken Dinner</h1>
+        <img src="" alt="">
+        <div>
+            <h2 id="congratsName"></h2>
+            <p id="prizeDescription"></p>
+        </div>
+        <button>Click here to claim your prize</button>
+        <button>Decline prize</button>
+    </div>
+    
+</body>
+</html>

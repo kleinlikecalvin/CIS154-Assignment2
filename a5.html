@@ -22,19 +22,19 @@
         </nav>
         <form name="prizeForm">
             <!-- First Name -->
-            <label for="firstName" id="firstNameLabel">Enter your first name:</label>
+            <label for="firstName" id="firstNameLabel">Enter your first name: <span id="nameAlertSpan"></span></label>
             <input type="text" id="firstName" name="firstName">
 
             <!-- Any Number -->            
-            <label for="anyNumber" id="anyNumberLabel">Enter a number:</label>
+            <label for="anyNumber" id="anyNumberLabel">Enter a number: <span id="anyNumAlertSpan"></label>
             <input type="text" id="anyNumber" name="anyNumber">
 
             <!-- Verb Ending In "ing" -->
-            <label for="ingVerb" id="ingVerbLabel">Enter a verb ending in "ing":</label>
+            <label for="ingVerb" id="ingVerbLabel">Enter a verb ending in "ing": <span id="ingVerbAlertSpan"></label>
             <input type="text" id="ingVerb" name="ingVerb">
 
             <!-- Choose a door -->
-            <p id="doorsLabel">Choose one:</p>
+            <p id="doorsLabel">Choose one: <span id="doorsAlertSpan"></p>
             <input type="radio" id="doorOne" name="chooseDoor" value="">
             <label for="doorOne" class="radioLabels">Door 1</label>
             <br>
@@ -48,11 +48,11 @@
             <label for="doorFour" class="radioLabels">Door 4</label>
 
             <!-- Number 7 - 14 -->
-            <label for="sevenToFourteen" id="sevenToFourteenLabel"> Choose a number from 7 - 14:</label>
+            <label for="sevenToFourteen" id="sevenToFourteenLabel"> Choose a number from 7 - 14: <span id="betweenNumAlertSpan"></label>
             <input type="text" id="sevenToFourteen" name="sevenToFourteen">
 
             <!-- Name starting with B -->
-            <label for="nameWithB" id="nameWithBLabel">Enter a name starting with the letter B:</label>
+            <label for="nameWithB" id="nameWithBLabel">Enter a name starting with the letter B: <span id="bNameAlertSpan"></label>
             <input type="text" id="nameWithB" name="nameWithB">
 
             <!-- Submit Button-->
